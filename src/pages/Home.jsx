@@ -32,13 +32,13 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="container py-8 mx-auto">
+      <section className="container px-4 py-8 mx-auto">
         <h2 className="my-3 text-4xl font-bold text-center">Posts</h2>
-        <div className="grid grid-cols-1 gap-4 my-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-col gap-4 my-5">
           {loading ? (
-            <span className="loading loading-spinner loading-lg"></span>
+            <span className="mx-auto loading loading-spinner loading-lg"></span>
           ) : error ? (
-            <div role="alert" className="alert alert-error">
+            <div role="alert" className="text-center alert alert-error">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6 stroke-current shrink-0"
